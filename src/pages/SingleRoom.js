@@ -29,7 +29,7 @@ export default class SingleRoom extends Component {
         
         return room ? 
         // if true (room found)
-        <StyledHero img = {images[0]}>
+        <StyledHero img = {images[0] || this.state.defaultBcg}>
             <Banner title={`${name} room`}>
                 <Link to="/rooms" className="btn-primary">
                     back to rooms
