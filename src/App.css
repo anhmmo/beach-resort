@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lustria&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -59,18 +59,19 @@ h6 {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  background: var(--primaryColor);
-  padding: 0.4rem 0.9rem;
-  border: 3px solid var(--primaryColor);
+  color: white;
+  background: transparent;
+  padding: 0.4rem 1rem;
+  border: 2px solid white;
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
 }
 .btn-primary:hover {
-  background: transparent;
-  color: var(--primaryColor);
+  border-radius: 5px;
+  background: #deb668;
 }
+
 .loading {
   text-transform: capitalize;
   text-align: center;
@@ -358,12 +359,15 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: var(--darkGrey);
+  font-family: 'Nunito', sans-serif;
+  background: white;
   text-transform: capitalize;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   text-align: center;
   font-weight: 700;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 2px;
+  color: #606060;
+  text-transform: uppercase;
 }
 /* end of room  */
 /* single room*/
