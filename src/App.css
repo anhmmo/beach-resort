@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lustria&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -159,7 +161,7 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,8 +235,13 @@ h6 {
   padding: 5rem 0;
 }
 .services {
-  background: var(--darkGrey);
+  font-family: 'Lustria', serif;
+  background-color: #162541;
   text-align: center;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1rem;
 }
 .services-center {
   width: 90vw;
@@ -246,7 +253,7 @@ h6 {
 }
 .service span {
   display: inline-block;
-  color: var(--primaryColor);
+  color: #ff4157;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
