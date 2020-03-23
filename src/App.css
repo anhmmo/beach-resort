@@ -21,7 +21,6 @@
 body {
   padding-top: 66px;
   color: var(--mainBlack);
-  background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
 }
@@ -97,7 +96,7 @@ h6 {
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: var(--offWhite);
+  background: white;
   z-index: 1;
 }
 .nav-header {
@@ -110,29 +109,45 @@ h6 {
   cursor: pointer;
   outline: none;
 }
+
+.nav-header a{
+  text-decoration: none;
+}
+
+.nav-logo-vip {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #deb668;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
 .nav-icon {
   font-size: 1.5rem;
   color: var(--primaryColor);
 }
 .nav-links {
+  margin-top: 0.5rem;
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
 }
 .nav-links a {
+  font-family: 'Nunito', sans-serif;
   display: block;
   text-decoration: none;
   padding: 1rem 0;
   color: var(--mainBlack);
   transition: var(--mainTransition);
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 1px;
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: #05c896;
 }
 
 .show-nav {
@@ -150,7 +165,7 @@ h6 {
   .nav-links {
     height: auto;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 34rem;
   }
   .nav-links a {
     margin: 0 1rem;
@@ -229,7 +244,7 @@ h6 {
   width: 5rem;
   height: 5px;
   margin: 0 auto;
-  background: var(--primaryColor);
+  background: #deb668;
 }
 /* end of Title */
 
