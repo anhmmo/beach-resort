@@ -16,8 +16,8 @@ export default function Home() {
             </Link>
         </Banner>
     </Hero>
-    <Services />
     <FeaturedRooms />
+    <Services />
     </>
     );
 }
