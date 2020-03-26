@@ -95,8 +95,8 @@ h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.75rem 2rem;
-  background: white;
+  padding: 0rem 2rem;
+  background: #ffffff;
   z-index: 1;
 }
 .nav-header {
@@ -114,13 +114,30 @@ h6 {
   text-decoration: none;
 }
 
+.nav-logo-vip::before {
+  content: "\2655";
+  font-size: 2.1rem;
+  margin-right: 5px;
+}
+
 .nav-logo-vip {
+  margin: 8px 0 0 30px;
   font-family: 'Nunito', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  color: #deb668;
+  color: transparent;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #fc8973, #d10c64);
+  text-shadow: 1px 1px 2px rgba(247, 97, 38, 0.7);
+  transition: all .3s;
+  position: relative;
+}
+
+.nav-logo-vip:hover {
+  text-shadow: none;
 }
 
 .nav-icon {
@@ -133,21 +150,48 @@ h6 {
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  
 }
 .nav-links a {
   font-family: 'Nunito', sans-serif;
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: rgb(24, 1, 1);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
+  position: relative;
 }
-.nav-links a:hover {
-  color: #05c896;
+
+.nav-links a::after, .nav-logo-vip::after {
+  position: absolute;
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0px;
+    height: 2px;
+    background-color: #f35a13;
+    transition: opacity .3s ease,width .3s ease;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.nav-logo-vip::after {
+    margin: -5px auto;
+    height: 3px;
+    background-color: #f35a13;
+}
+
+.nav-links a:hover::after, .nav-logo-vip:hover::after{
+  width: 50px;
+}
+
+.nav-links a:hover{
+  color: #f35a13;
 }
 
 .show-nav {
@@ -176,11 +220,12 @@ h6 {
 /* Hero */
 .defaultHero,
 .roomsHero {
-  min-height: calc(100vh - 66px);
+  min-height: calc(100vh - 56px);
   background: url("./images/bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -10px;
 }
 .roomsHero {
   background-image: url("./images/room-2.jpeg");

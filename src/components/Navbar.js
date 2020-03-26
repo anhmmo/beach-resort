@@ -15,7 +15,7 @@ export default class Navbar extends Component {
                 <div className="nav-center">
                     <div className="nav-header">
                         <Link to = "/">
-                            <p className="nav-logo-vip">Vip star Resort</p>
+                            <p className="nav-logo-vip">beach Resort</p>
                         </Link>
                         <button type="button" className="nav-btn" onClick={this.handleToggle}>
                             <FaAlignRight />
